@@ -49,13 +49,9 @@ in `config.plist`, under path `DeviceProperties/Add/PciRoot(0x0)/Pci(0x2,0x0)`
 * **device-id**: 16590000
 ### Kext list, in load order
 Lilu.kext
-
 RealtekRTL8111.kext
-
 VirtualSMC.kext
-
 WhateverGreen.kext
-
 AppleALC.kext
 ### Boot parameters
 keepsyms=1 alcid=11
