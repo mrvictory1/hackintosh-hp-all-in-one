@@ -8,8 +8,19 @@
 * SMBIOS is iMac18,1
 * Let me know if you ever try Sonoma on similar hardware
 
+### This PC has:
+* Intel Core i3-6100U
+* 4 GB RAM (upped to 8 GB on mine)
+* Western Digital WDC WD10EZEX-60WN4A0 1 TB HDD
+* Intel HD Graphics 520
+* Realtek RTL8723BE Wifi and Bluetooth Radio (unsupported)
+* 1600x900 pixels onboard monitor
+* UVC Compatible Camera
+* Realtek RTL8168GU/8111GU Ethernet
+* 4 USB ports, an Ethernet port, an HDMI port
+
 ### What works?
-* Booting to macOS 13 Ventura
+* Booting to macOS 13 Ventura, boot time is roughly 1 minute
 * Webcam
 * GPU Acceleration
 * Brightness adjustment
@@ -26,6 +37,7 @@
 
 ### Untested
 * HDMI
+* Hibernation
 
 ## Configuration
 ### GPU Configuration
