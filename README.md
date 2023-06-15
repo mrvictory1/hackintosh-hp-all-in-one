@@ -1,6 +1,6 @@
 # macOS 13 Ventura on HP All-In-One 20-c081nt
 ### tl;dr:
-* Spoof iGPU as Kaby Lake: `AAPL,ig-platform-id` = `00001659` and `device-id`= `16590000`
+* **Spoof iGPU as Kaby Lake**: `AAPL,ig-platform-id` = `00001659` and `device-id`= `16590000`
 * Wifi/BT does not work, use wired networking for installing
 * RealtekRTL8111.kext for ethernet
 * SSDTs are: EC-USBX-DESKTOP, PLUG-DRTNIA, PNLF
@@ -22,3 +22,26 @@
 ### What doesn't work?
 * Wifi and Bluetooth. Realtek is unsupported, there is no fix.
 * Airdrop
+* Showing off at subreddit because API protest
+
+### Untested
+* HDMI
+
+## Configuration
+### Kext list, in load order
+Lilu.kext
+RealtekRTL8111.kext
+VirtualSMC.kext
+WhateverGreen.kext
+AppleALC.kext
+### Boot parameters
+keepsyms=1 alcid=11
+### SystemProductName
+iMac18,1 (this will not let you update to Sonoma)
+### Driver List
+HfsPlus.efi -- this is required during installation. The "Method 1" mentioned in [guide](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/linux-install.html#downloading-macos) did not work for me.
+OpenRuntime.efi
+### SSDT List
+SSDT-EC-USBX-DESKTOP.aml
+SSDT-PLUG-DRTNIA.aml
+SSDT-PNLF.aml
