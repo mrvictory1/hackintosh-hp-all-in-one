@@ -30,7 +30,7 @@
 ## Configuration
 ### GPU Configuration
 in `config.plist`, under path `DeviceProperties/Add/PciRoot(0x0)/Pci(0x2,0x0)`
-* **ÀAPL,ig-platform-id**: 00001659
+* **AAPL,ig-platform-id**: 00001659
 * framebuffer-patch-enable: 01000000
 * framebuffer-stolenmem: 00003001
 * framebuffer-fbmem: 00009000
