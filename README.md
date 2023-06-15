@@ -48,19 +48,19 @@ in `config.plist`, under path `DeviceProperties/Add/PciRoot(0x0)/Pci(0x2,0x0)`
 * framebuffer-fbmem: 00009000
 * **device-id**: 16590000
 ### Kext list, in load order
-Lilu.kext
-RealtekRTL8111.kext
-VirtualSMC.kext
-WhateverGreen.kext
-AppleALC.kext
+* Lilu.kext
+* RealtekRTL8111.kext
+* VirtualSMC.kext
+* WhateverGreen.kext
+* AppleALC.kext
 ### Boot parameters
 keepsyms=1 alcid=11
 ### SystemProductName
 iMac18,1 (this will not let you update to Sonoma)
 ### Driver List
-HfsPlus.efi -- this is required during installation. The "Method 1" mentioned in [guide](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/linux-install.html#downloading-macos) did not work for me.
-OpenRuntime.efi
+* HfsPlus.efi -- this is required during installation. The "Method 1" mentioned in [guide](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/linux-install.html#downloading-macos) did not work for me.
+* OpenRuntime.efi
 ### SSDT List
-SSDT-EC-USBX-DESKTOP.aml
-SSDT-PLUG-DRTNIA.aml
-SSDT-PNLF.aml
+* SSDT-EC-USBX-DESKTOP.aml
+* SSDT-PLUG-DRTNIA.aml
+* SSDT-PNLF.aml
